@@ -1,0 +1,82 @@
+body{
+ background-color:#262a2f;
+}
+.card{
+    background-color: white;
+    width: 450px;
+    padding: 25px 35px;
+    border-radius: 5px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    
+}
+input{
+    height: 40px;
+   outline: 0;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0px 20px;
+}
+button{
+    color: white;
+    background-color: rgb(148, 0, 206);
+    width: 100%;
+    cursor: pointer;
+    height: 40px;
+    margin: 20px 0px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-style: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.img-box{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    transition: max-height 1s;
+    overflow: hidden;
+}
+.img-box img{
+    width: 100%;
+    padding: 10px;
+}
+.img-box.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
